@@ -4,7 +4,7 @@ const cors = require('cors');
 const admin = require('firebase-admin');
 
 //Register This App To Firebase
-let serviceAccount = require("D:/Projects/planetq-api/planetq-api-firebase-adminsdk.json");
+let serviceAccount = require("./planetq-api-firebase-adminsdk.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://planetq-api-default-rtdb.firebaseio.com"
